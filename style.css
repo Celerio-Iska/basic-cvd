@@ -703,12 +703,17 @@ img {
 .services:nth-child(even) .wwd__wrapper {
   flex-direction: row-reverse;
 }
+.services:last-child a{
+  display:none;
+}
+
 
 /* WWD MV */
 @media screen and (max-width: 500px) {
   .services {
     padding-left: 1rem;
     padding-right: 1rem;
+        align-items: flex-start;
   }
   .wwd .wwd__wrapper {
     display: grid;
@@ -718,9 +723,8 @@ img {
     order: 2;
   }
   .wwd .wwd__text h1 {
-    font-size: 5rem;
+    font-size: 3rem;
     text-align: center;
-    font-size: 4rem;
   }
   .wwd .wwd__text p {
     text-align: justify;
@@ -729,9 +733,56 @@ img {
     width: 25rem;
     margin: 6rem;
   }
+}
+  
+/* updates*/
+.updates{
+  padding-top: 13rem;
+  padding-bottom: 5rem;
+  background: #ffffff;
+}
+.updates .updates__wrapper{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5rem;
+}
+.updates .updates__text h1 {
+  font-size:4rem;
+  font-weight: 780;
+  color: #ffa700;
+  line-height: 1;
+}
+.updates .updates__text p{
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  max-width: 719px;
+}
+.updates .updates__text h2{
+  color: #ffa700;
+  font-size:2.5rem;
+  font-weight: 700;
+  padding-bottom: 2rem;
+}
+.updates .updates__text a{
+  color: #ffa700;
+}
 
 
-  /* REPEATABLE PATTERNS */
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.icons span{
+  margin-right: 10px;
+}
+.icons i{
+  margin-right: 5px;
+}
+
+/* REPEATABLE PATTERNS */
   .btn {
     display: inline-block;
     padding: 1.5rem 2rem;
@@ -747,4 +798,4 @@ img {
   .btn.bg--secondary {
     background: #2b2b2b;
   }
-}
+
